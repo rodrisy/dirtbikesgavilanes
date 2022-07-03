@@ -1,0 +1,41 @@
+* {
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+}
+
+.menubar{
+    margin: 0;
+    border: 3px solid;
+    border-radius: 5px;
+    background-color: black;
+}
+
+#tmenubar{
+    border-color: red;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    min-height: 12%;
+}
+
+.container {
+    width: ;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content:space-around;
+}
+
+.button{
+    border: 5px solid green ;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+#rmenubar{
+    border-color: blue;
+    position: relative;
+    top: 200px;
+}
