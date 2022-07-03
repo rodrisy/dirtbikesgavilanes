@@ -1,27 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: whitesmoke;
 }
 
 .menubar{
     margin: 0;
     border: 3px solid;
-    border-radius: 5px;
-    background-color: black;
+    border-radius: 5px; 
 }
 
-#tmenubar{
-    border-color: red;
+#container{
+    border: 3px solid yellow;
     position: absolute;
     margin: auto;
     width: 100%;
     left: 0%;
     top: 0%;
-    min-height: 12%;
+    height: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
-.container {
-    width: ;
+.mbtext{
+    color: rgb(30, 30, 30);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 90%;
+
+    text-align: center;
+    margin: auto;
+}
+
+#tmenubar{
+    border-color: red;
+    position: absolute;
+    margin: 0;
+    width: 40%;
+    right: 10%;
+    top: 0%;
+    height:  100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
@@ -30,12 +50,25 @@
 
 .button{
     border: 5px solid green ;
-    margin-right: 40px;
+    margin-right: 10px;
     padding: 10px;
+    height: 20px;
+    justify-content:space-around;
+}
+
+#icon{
+    position: absolute;
+    width: 5%;
+    border: 3px solid greenyellow;
+    right: 10%;
+}
+
+#avatar{
 }
 
 #rmenubar{
     border-color: blue;
     position: relative;
+    height:auto;
     top: 200px;
 }
