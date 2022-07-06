@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 5%;
+  z-index: 10000;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.img1{
+  width: 200px;
+  filter:brightness(100);
+  }
+
+.img1:hover{
+  width: 200px;
+  filter: brightness(1);
+  }
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #f60;
+  font-weight: 600;
+}
+
+.cta {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #f60;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(255, 102, 0, 0);
+  border: 5px solid #f60;
+  border-radius: 50px;
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+.slogan{
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#slogan{
+  -ms-text-align-last: left;
+
+}
+
+.slogan2{
+  z-index: 3;
+  position: absolute;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 75px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#slogan2{
+  -ms-text-align-last: left;
+
+}
+.slogan-back{
+  z-index: 2;
+  transform:rotate(-15deg);
+  left: -75px;
+  top: -50px;
+  position: absolute;
+  opacity: 50%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 150px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+.container1 {
+  position: relative;
+  margin-left: 40px;
+  margin-top: 20%;
+
+  width: 450px;
+  height: 150px;
+}
+
+.container2 {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 30%;
+
+  width: 450px;
+  height: 150px;
+
+  display: none;
+}
+
+
+
+.orange {
+  z-index: 2;
+  position: absolute;
+  border: 2.5px solid #ff6600;
+}
+
+
+.a {
+  height: 25px;
+  width: 0px;
+  left: 50px;
+  top: -25px;
+}
+
+.b {
+  height: 0px;
+  width: 450px;
+  left: 50px;
+  top: -25px;
+}
+
+.c {
+  height: 150px;
+  width: 0px;
+  left: 495px;
+  top: -25px;
+}
+
+.d{
+  height: 0px;
+  width: 55px;
+  top: 120px;
+  left: 445px;
+}
+
+.a2 {
+  height: 20px;
+  width: 0px;
+  left: 45px;
+  top: -30px;
+}
+
+.b2 {
+  height: 0px;
+  width: 55px;
+  left: 50px;
+  top: -30px;
+}
+
+.c2{
+  height: 20px;
+  width: 0px;
+  left: 100px;
+  top: 105px;
+}
+
+.d2{
+  height: 0px;
+  width: 55px;
+  top: 120px;
+  left: 45px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .container1{
+    display: none;
+  }
+  .container2{
+    display: unset;
+    margin-top: 50%;
+    margin-left: 30%;
+  }
+}
+@media only screen and (max-height: 600px ) {
+  .container1{
+    display: none;
+  }
+  .container2{
+    display:unset;
+    margin-top: 20%;
+  }
+}
+
+.slogan2:hover{
+  text-shadow: 0px 0px 10px #f60;
+}

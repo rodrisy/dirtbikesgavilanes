@@ -56,12 +56,7 @@
     justify-content:space-around;
 }
 
-#icon{
-    position: absolute;
-    width: 5%;
-    border: 3px solid greenyellow;
-    right: 10%;
-}
+
 
 #avatar{
 }
