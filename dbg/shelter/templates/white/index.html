@@ -8,12 +8,23 @@
         <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
         <style>
-            body {
-                background-image: url(images/ktmimage1.jpg);
+            .main-image{
                 background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
+                background-attachment:fixed;
+                background-size:cover;
+                position: relative;
+                z-index: 0;
+                max-width: 100%;
+                height: auto;
+                width: auto\9;
             }
+            .background-container {
+            overflow-x: hidden;
+            }
+
+            .container1, .container2{
+            }
+
         </style>
     </head>
     <body>
@@ -37,33 +48,40 @@
                 <a href="#">About</a>
             </div>
         </div>
-        <div class="container1">
-            <div class="outline">
-                <div class="orange a"></div>
-                <div class="orange b"></div>
-                <div class="orange c"></div>
-                <div class="orange d"></div>
+        <div id="page">
+            <div class="first home">
+                <div class="container1">
+                    <div class="outline">
+                        <div class="orange a"></div>
+                        <div class="orange b"></div>
+                        <div class="orange c"></div>
+                        <div class="orange d"></div>
+                    </div>
+                    <p class="slogan" id="slogan">
+                            el rujido se escucha
+                            entre las montañas
+                    </p>
+                </div>
+                <div class="container2">
+                    <div class="outline">
+                        <div class="orange a2"></div>
+                        <div class="orange b2"></div>
+                        <div class="orange c2"></div>
+                        <div class="orange d2"></div>
+                    </div>
+                    <p class="slogan2" id="slogan">rawr</p>
+                    <p class="slogan-back">
+                        rawr
+                    </p>
+                </div>
+                <div class="background-container"><img src="images/ktmimage1.jpg" class="main-image"></div>
             </div>
-            <p class="slogan" id="slogan">
-                    el rujido se escucha
-                    entre las montañas
-            </p>
-        </div>
-        <div class="container2">
-            <div class="outline">
-                <div class="orange a2"></div>
-                <div class="orange b2"></div>
-                <div class="orange c2"></div>
-                <div class="orange d2"></div>
+            
+            <div class="second sessions">
+                <h1> Preparado para la aventura?</h1>
             </div>
-            <p class="slogan2" id="slogan">rawr</p>
-            <p class="slogan-back">
-                rawr
-            </p>
         </div>
-        <script type="text/javascript" src="mobile.js"></script>
-
         
-
+<script type="text/javascript" src="mobile.js"></script>
     </body>
 </html>
